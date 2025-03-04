@@ -40,7 +40,7 @@ code-review-system/
 ### **CLI Mode (Recommended)**
 1. **Run the CLI tool**
    ```sh
-   python cli_review.py --file /path/to/your/code.py
+   python cli_review.py /path/to/your/code.py
    ```
 2. **View the review in the terminal**
    - The system will analyze your code and return a structured review with issues, strengths, and refactoring suggestions.
