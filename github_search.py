@@ -20,7 +20,7 @@ class GitHubCodeSearch:
 
         if response.status_code == 200:
             results = response.json().get("items", [])
-            return results  # Returns list of code snippets
+            return results  
         else:
             print(f"GitHub API Error: {response.status_code}, {response.json()}")
             return []
@@ -29,7 +29,7 @@ class GitHubCodeSearch:
         """Extract meaningful code snippets from GitHub search results."""
         snippets = []
         for item in results:
-            file_url = item.get("html_url")  # URL to view the file
+            file_url = item.get("html_url")  
             repo_name = item.get("repository", {}).get("full_name", "Unknown Repo")
 
             snippet = {

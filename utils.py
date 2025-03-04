@@ -81,10 +81,3 @@ def ensure_language_folders(base_dir: str, languages: List[str]) -> None:
     for lang in languages:
         lang_folder = os.path.join(base_dir, lang)
         os.makedirs(lang_folder, exist_ok=True)
-
-# # Example Usage:
-# config = load_config("config.py")  # Make sure config.py exists
-# base_folder = config.get("CODE_FOLDER", "codes")  # Use default "codes" if not specified
-
-# languages = ["Python", "JavaScript", "Java"]  # Example detected languages
-# ensure_language_folders(base_folder, languages)
