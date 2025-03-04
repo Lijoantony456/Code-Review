@@ -15,8 +15,8 @@ The **Code Review System** is an AI-powered tool designed to automate the proces
 - **Programming Language**: Python
 - **Framework**: LangChain
 - **Database**: ChromaDB
-- **LLM Provider**: Groq
-- **Embeddings Model**: Ollama
+- **LLM Provider**: Groq("llama-3.3-70b-versatile")
+- **Embeddings Model**: Ollama("nomic-embed-text")
 
 ## Project Structure
 ```
